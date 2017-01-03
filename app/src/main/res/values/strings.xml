@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">云诊断平台</string>
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+
+    <string name="viewfinderview_status_text1">病例二维码</string>
+    <string name="viewfinderview_status_text2">放入框中,自动扫描</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+    <string name="login_agree">轻触上面的“进入云诊断”按钮,即表示你同意</string>
+    <string name="service_agreement">《华夏病理云诊断许可及服务协议》</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:id="@+id/slide_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:text="L2016000122-1 HE"
+            android:textColor="#FFFFFF"
+            android:maxEms="7"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/slide_bar_img"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:gravity="center_vertical|left"
+            android:src="@mipmap/ic_choice_yes_normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/slide_bar_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:gravity="center_vertical|left"
+        android:textColor="#FFFFFF"
+        android:text="消化系统" />
+
+</LinearLayout>

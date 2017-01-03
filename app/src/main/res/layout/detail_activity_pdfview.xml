@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_activity_pdfview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ipathology.dp.activity.detail.PDFViewActivity">
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/pdf_view_relative"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#000000"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/pdf_view_cancel"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="取消"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="签发"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/pdf_view_sure" />
+
+        </RelativeLayout>
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <LinearLayout
+        android:id="@+id/pdf_view_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ipathology.dp.activity.MainActivity">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:background="@color/btnPress"-->
+        <!--android:gravity="center">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_my_left_left"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:src="@mipmap/tabbar_user2" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_my_right_two"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:src="@mipmap/tabbar_user2"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img_my_right_one"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:src="@mipmap/tabbar_user2"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_toLeftOf="@+id/img_my_right_two"-->
+            <!--android:layout_toStartOf="@+id/img_my_right_two" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_my_center_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@color/write"-->
+            <!--android:layout_alignBottom="@+id/img_my_right_one"-->
+            <!--android:layout_centerHorizontal="true" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

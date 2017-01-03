@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/normal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txt_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_right_one"
+        android:layout_centerHorizontal="true"
+        android:text="华夏病理云诊断平台"
+        android:textColor="@color/write"
+        android:textSize="16dp" />
+    <ImageView
+        android:id="@+id/img_right_one"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/tabbar_user2"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_right_two"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_right_two"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/tabbar_user2"
+        android:layout_alignBottom="@+id/txt_center_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/img_left_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/tabbar_user2"
+        android:layout_alignBottom="@+id/txt_center_title"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

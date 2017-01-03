@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.ipathology.dp">
+
+    <!-- //友盟权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <!-- //Zxing -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- //环信即时通信权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    //ShareSDK
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <application
+        android:name=".appliaction.MyApplication"
+        android:icon="@mipmap/dp_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+
+        <!--&lt;!&ndash; 设置环信应用的AppKey &ndash;&gt;-->
+        <!--<meta-data-->
+        <!--android:name="EASEMOB_APPKEY"-->
+        <!--android:value="ipathology#fenlanplatform" />-->
+        <!--&lt;!&ndash; 声明SDK所需的service SDK核心功能 &ndash;&gt;-->
+        <!--<service-->
+        <!--android:name="com.hyphenate.chat.EMChatService"-->
+        <!--android:exported="true" />-->
+        <!--&lt;!&ndash; 声明SDK所需的receiver &ndash;&gt;-->
+        <!--<receiver android:name="com.hyphenate.chat.EMMonitorReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+
+        <!--<data android:scheme="package" />-->
+        <!--</intent-filter>-->
+        <!--&lt;!&ndash; 可选filter &ndash;&gt;-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<activity android:name=".activity.chat.ChatActivity" />-->
+
+        <!--&lt;!&ndash; 显示下载大图页面 &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/horizontal_slide" />-->
+
+        <!--&lt;!&ndash; 下载文件 &ndash;&gt;-->
+        <!--<activity-->
+        <!--android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/horizontal_slide" />-->
+        <!---->
+
+
+        <!--ShareSDK-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105917782" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:name=".activity.base.BaseHomeActionBarActivity" />
+        <activity android:name=".activity.base.BaseActivity" />
+
+        <activity
+            android:name=".activity.NavigationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ScanningOrLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+        <activity
+            android:name=".activity.user.DiagnosisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite" />
+        <activity
+            android:name=".activity.user.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarWhite"></activity>
+        <activity
+            android:name=".zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".zxing.android.PreferencesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.PublicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.base.BarWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.IntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.detail.AcdSeeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarBlack" />
+        <activity
+            android:name=".activity.detail.CaseListSiteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.detail.DiagnoseCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.TestActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.detail.CaseListExpertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.other.PinchImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarBlack" />
+        <activity
+            android:name=".activity.detail.PDFViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusBarBlack" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58046cfee0f55ac633000f01" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_home_background_normal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/scanning_or_login_scanning"
+            android:background="@mipmap/btn_scanning_check_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="@color/write"
+            android:text="扫描查病理"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/scanning_or_login_diagnosis"
+            android:background="@mipmap/btn_get_diagnosis_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="80px"
+            android:textColor="@color/write"
+            android:text="进入云诊断"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

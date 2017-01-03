@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:id="@+id/bar_relative_bg"
+    android:background="@color/normal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/bar_linear_left_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/bar_txt_center_title"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/bar_img_left_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_nav_return_normal" />
+
+        <TextView
+            android:id="@+id/bar_txt_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/write"
+            android:textSize="18dp"
+            android:text="返回"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bar_linear_center_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/bar_linear_right_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/bar_txt_right_one">
+
+            <ImageView
+                android:id="@+id/bar_img_right_one"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/tabbar_user2" />
+        </LinearLayout>
+      <LinearLayout
+            android:id="@+id/bar_linear_right_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/bar_txt_right_one">
+
+            <ImageView
+                android:id="@+id/bar_img_right_two"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/tabbar_user2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bar_txt_right_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/write"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bar_txt_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="华夏病理云诊断平台"
+        android:textColor="@color/write"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

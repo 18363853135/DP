@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ipathology.dp.activity.base.BaseWebViewActivity">
+
+    <cn.ipathology.dp.view.AutoSwipeRefreshLayout
+        android:id="@+id/baseWebView_detail_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.lzyzsd.jsbridge.BridgeWebView
+            android:id="@+id/baseWebView_detail_bridgeWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.github.lzyzsd.jsbridge.BridgeWebView>
+
+    </cn.ipathology.dp.view.AutoSwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/baseWebView_detail_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

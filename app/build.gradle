@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "cn.ipathology.dp"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    task clean(type: Delete) {
+        delete rootProject.buildDir
+    }
+
+    repositories {
+        // ...
+        maven { url "https://jitpack.io" }
+    }
+
+    productFlavors {
+        wandoujia {}
+        baidu {}
+        c360 {}
+        youmeng {}
+        dp {}
+        huawei {}
+        xiaomi {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+
+
+    sourceSets {
+        main { // 设置Jni so文件路径 如果有jniLibs目录就不需要设置
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi' //只打包armeabi平台的，就算有其他文件夹也不管
+//                include 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'mips', 'x86', 'x86_64'
+        }
+    }
+
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/httpclient-4.3.6.jar')
+    compile files('libs/core-3.0.0.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.github.barteksc:android-pdf-viewer:2.3.0'
+    compile project(':OneKeyShare')
+}

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/normal</item>
+        <item name="colorPrimaryDark">@color/normal</item>
+        <item name="colorAccent">@color/normal</item>
+    </style>
+
+    <style name="StatusBarWhite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/write</item>
+        <item name="colorPrimaryDark">@color/write</item>
+        <item name="colorAccent">#CCCCCC</item>
+    </style>
+
+    <style name="StatusBarBlack" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/contents_text</item>
+        <item name="colorPrimaryDark">@color/contents_text</item>
+        <item name="colorAccent">@color/normal</item>
+    </style>
+
+
+
+</resources>
