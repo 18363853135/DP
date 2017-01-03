@@ -225,6 +225,7 @@ public class GuideActivity extends Activity implements GestureDetector.OnGesture
                         @Override
                         public void run() {
                             is2CallBack = false;
+                            //test　Ｇｉｔ
                         }
                     }, 500);
                 }
