@@ -213,7 +213,7 @@ public class GuideActivity extends Activity implements GestureDetector.OnGesture
 //                //  调用ActionActivity中的Main
 //                startActivity(intent);
                 https://git.oschina.net/1173964585/DP.gitｋｋｋ
-                // git@git.oschina.net:1173964585/DP.gitｌｌｌｈｈ　
+                // git@git.oschina.net:1173964585/DP.gitｌｌｌｈｈ　ｈｈｈ
                               if (!is2CallBack) {
                     if (TextUtils.isEmpty(new TokenUtil().getToken())) {
                         Intent intent = new Intent(GuideActivity.this, LoginActivity.class);

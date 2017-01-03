@@ -31,7 +31,7 @@ public class NavigationActivity extends Activity {
         fileUtil = new FileUtil();
 //        upDateHtml();
 //        judgeActivity();
-
+//ｇｇ
         UnzipAssets();
 
     }

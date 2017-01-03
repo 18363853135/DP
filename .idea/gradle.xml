@@ -2,7 +2,8 @@
 <project version="4">
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
-      <GradleProjectSettings>
+      <GradleProjectSettings>　
+
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
