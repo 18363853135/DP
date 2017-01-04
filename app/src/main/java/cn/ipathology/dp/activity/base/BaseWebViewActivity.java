@@ -276,14 +276,11 @@ public class BaseWebViewActivity extends BaseActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
     }
-
 
     //关闭当前的页面 并请求Js对上个页面进行操作
     public void appBridgeClose(String data) {
         try {
-            
             JSONObject jsonObject = new JSONObject(data);
             String functionName = jsonObject.getString("fnname");
             String param = jsonObject.getString("param");
